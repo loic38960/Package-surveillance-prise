@@ -110,7 +110,7 @@ automation:
              | selectattr('state','in',['off','unavailable','unknown'])
              | list | count > 0 }}
 
-#    action:
+    action:
 #      - service: persistent_notification.create
 #        data:
 #          title: "DEBUG Vérif périodique Zigbee"
@@ -160,3 +160,4 @@ automation:
             {% for e in en_defaut -%}
             ⚠️ {{ e.name }} n'est plus alimenté
             {% endfor %}
+
